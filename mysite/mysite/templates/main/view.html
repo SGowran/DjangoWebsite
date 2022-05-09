@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load change_lang %}
+
+{% block title %}
+View
+{% endblock %}
+
+{% block content %}
+    {% for td in user.todolist.all %}
+        <p><a href="/{{td.id}}">{{td.name}}</a></p>
+    {% endfor %}
+{% endblock %}
