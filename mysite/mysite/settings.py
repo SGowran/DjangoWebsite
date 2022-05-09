@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    # using static files for loading content for localization
     'django.contrib.staticfiles',
     "crispy_forms",
     'main.apps.MainConfig',
@@ -147,4 +148,3 @@ CRISPY = TEMPLATE_PACK = "bootstrap4"
 LOGIN_REDIRECT_URL = "/"  # home
 LOGOUT_REDIRECT_URL = "/"
 
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
